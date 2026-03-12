@@ -1,0 +1,42 @@
+a = b = c = "kopo"
+print(a)
+print(b)
+print(c)
+
+a, b, c = 10, 14, 4.5
+print(a,b,c)
+
+b = 4.5
+print(id(4.5), id(b))
+
+b = b + 1
+print(b)
+print(id(b))
+
+x = (1 == True)
+y = (1 == False)
+a = True + 2   #리터널에서 참과 거짓 사용
+b = False + 4  #리터널은 원시 데이터(변수, 상수에 사용)
+
+print("x is", x)
+print("y is",y)
+print("a:", a)
+print("b:", b)
+
+a = [5, 10, 15, 20, 25, 30]
+print(a[0:4]) #0번째부터 4보다 작은데 가장 큰 수 3번째까지
+
+print("a[3:] = ", a[3:])
+
+print("a[:4] = ", a[:4])
+
+a[1] = 50; print(a) #a의 리스트에서 1번째 아이템을 50으로 바꿔 넣어달라는 말
+
+t = (2, 'help', 1+2j)
+#t[0] =4  # tuple 은 선언 이후 변경 불가
+
+str = 'cold'
+list_enumerate = list(enumerate(str))
+print('list(enumerate) = ', list(enumerate(str)))
+# enumerate 은 인덱스와 값의 쌍을 생성함
+print('len(str) = ', len(str)) # len 은 문자의 길이를 말함
